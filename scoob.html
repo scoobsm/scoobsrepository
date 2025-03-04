@@ -1,0 +1,326 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scoob</title>
+  
+   <!-- link:-->
+    <link rel="icon" href="favw.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+   <!--Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="favw.png" alt="Logo" width="80">
+        <span>scoob</span>
+    </div>
+    <div class="search">
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+</header>
+
+<div class="categories">
+    <div class="category-link active" data-category="All">All</div>
+    <div class="category-link" data-category="food">food</div>
+    <div class="category-link" data-category="drinks">drinks</div>
+    <div class="category-link" data-category="bites">bites</div>
+    <div class="category-link" data-category="culture">culture</div>
+    <div class="category-link" data-category="vegan">vegan</div>
+    <div class="category-link" data-category="24/7s">24/7s</div>
+    <div class="category-link" data-category="desserts">desserts</div>
+</div>
+</div>
+
+
+<div class="main-content">
+
+    <div class="page-container">
+        <div class="left-space"></div>
+
+        <div class="no-items-found" style="display: none !important;">mhhh! try similar name or add in delivery form<!--| auto add crisis to the cart also--> </div>
+
+        <div class="gallery-container">
+            <div class="gallery">
+                <div class="gallery-item" data-category="food">
+                    <img src="img2.png" alt="nyama choma">
+                    <div class="item-info">
+                        <img src="walm.jpg" alt="Restaurant Logo">
+                        <span>Khan's BBQ</span>
+                    </div>
+                    <div class="item-actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                     <div class="image-name-box">Nyama Choma
+        
+                            <pre class="synonyms">
+                              <!-- synonyms was to be here -->
+                            </pre>
+        
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                           
+                         mon-sat: 0800-2200
+
+                         quantity: 1kg
+
+                         where: bondeni, mskitini
+
+                         Price: 10,000Tshs
+                                   
+
+                        </pre>
+                    </div>
+                </div>
+        
+                <!-- Other gallery items go here -->
+                <div class="gallery-item" data-category="culture">
+                    <img src="img8.jpeg" alt="winter tea">
+                    <div class="item-info">
+                        <img src="img0.jpeg" alt="Restaurant Logo">
+                        <span>luluz</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">winter tea
+                
+                            <pre class="synonyms">
+                               <!-- synonyms was to be here -->
+                                </pre>
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                                            
+                            quantity: 1kg
+                            Price: 3,000Tshs
+                            location: kisongo, center
+                        </pre>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="favw.png" alt="anotherrr">
+                    <div class="item-info">
+                        <img src="dp.jpg" alt="Restaurant Logo">
+                        <span>angels</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">anotherr
+                
+                            <pre class="synonyms">
+                               <!-- synonyms was to be here -->
+                               </pre>
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                            quantity: 1kg
+                            Price: 2,000Tshs
+                            location: ilboru
+                        </pre>
+                    </div>
+                </div>
+                             
+                
+                <div class="gallery-item" data-category="drinks">
+                    <img src="img6.jpeg" alt="desert rain">
+                    <div class="item-info">
+                        <img src="img0.jpeg" alt="Restaurant Logo">
+                        <span>pump</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">desert rain
+                
+                            <pre class="synonyms">
+                               <!-- synonyms was to be here -->
+                             </pre>
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                            quantity: 1kg               
+                            Price: 1,000Tshs         
+                            location: sahara
+                        </pre>   
+                    </div>
+                </div>
+                          
+            
+                <div class="gallery-item" data-category="vegan">
+                    <img src="img0.jpeg" alt="nyama choma">
+                    <div class="item-info">
+                        <img src="img6.jpeg" alt="Restaurant Logo">
+                        <span>mitis</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">clouds&meat
+                
+                            <pre class="synonyms">
+                               <!-- synonyms was to be here -->
+                            </pre>
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                            quantity: 1kg
+                            Price: 5,000Tshs
+                            location: soundcloud
+                        </pre>
+                    </div>
+                </div>
+                
+           
+                
+                <div class="gallery-item">
+                    <img src="img4.jpg" alt="nyama choma">
+                    <div class="item-info">
+                        <img src="dp.jpg" alt="Restaurant Logo">
+                        <span>stomachs wifi</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">5g
+                           
+                <pre class="synonyms" style="display:none !important;"><!-- synonyms was to be here -->          </pre>
+                        
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                            quantity: 1kg
+                            Price: 2,000Tshs
+                            location: kisongo, center
+                        </pre>
+                    </div>
+                </div>
+                
+
+                <div class="gallery-item">
+                    <img src="img4.jpg" alt="nyama choma">
+                    <div class="item-info">
+                        <img src="dp.jpg" alt="Restaurant Logo">
+                        <span>stomachs wifi</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="image-name-box">2g
+                           
+                <pre class="synonyms" style="display:none !important;"><!-- synonyms was to be here -->          </pre>
+                        
+                
+                        </div>
+                        <button class="more-info">Info</button>
+                    </div>
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <pre>
+                            quantity: 1kg
+                            Price: 100,000Tshs
+                            location: kisongo2, center2
+                        </pre>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+     
+        <div class="cart-container">
+            <div class="cart">
+                <div class="cart-icon">
+                    <p>Cart</p>
+                </div>
+                <div class="order-info">
+                    <p name="ordered">Ordered: <span></span></p>
+                    <p name="from">From: <span></span></p>
+                    <p name="total">Total: <span>0</span> Tshs</p>
+                </div>
+                <div class="moving-cart">
+                    <img src="cart00.png" width="80px" height="80px" alt="Cart" width="100" sizes="">
+                </div>
+                <button class="button">ORDER</button>
+            </div>
+            
+        </div>
+       
+    </div>
+    
+</div>
+
+</div> 
+
+<!-- Form Page
+<footer>
+   <div class="foot"> <p>footers more info </p></div>
+</footer>
+didnt stay down after
+ redcng main content size for 
+ large screens
+ -->
+
+
+<!-- Form Page -->
+<div class="form-page" id="formPage">
+    <div class="form-container">
+        <h3>Fill delivery details</h3>
+        <form id="orderForm" action="https://formsubmit.co/hamzalaizer024@gmail.com" method="post">
+<div class="inputs">        
+            <input type="hidden" name="cartItems" name="cartItems" id="cartItemsInput" readonly>
+            <input type="hidden" name="total" id="totalInput" readonly>
+            <input type="hidden" name="from" id="fromInput" readonly>
+            <input type="text" name="name" placeholder="create code name for delivery" required><br>
+            <input type="tel" name="phone" pattern="\+?[0-9]{10,1}" placeholder="receivers phone # " required><br>
+            <input name="missingItem" rows="3" placeholder="specify or add written order" ><br>
+            <input name="text" rows="3" placeholder="Delivered ASAP or At --:--" required><br>
+</div>
+            <button type="button" id="autoLocate" name="Auto-Locate"><pre>Auto-Locate    or   Use Map Below</pre></button>
+            <div id="map" style="height: 300px !important; margin-bottom: 20px !important;" required name="map container"></div>
+            <input type="text" id="coordinates" placeholder="Selected area on the map appear here" required name="coordinates">
+
+
+             <button type="submit" name="submit button">Submit Order</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
